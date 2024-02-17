@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14691DB9-3E58-3580-909A-4154575BFB13}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master -BE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build --check-stamp-file E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.27\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.27\Modules\GNUInstallDirs.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\cmake_uninstall.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\glfw3Config.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master -BE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build --check-stamp-file E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\mingw64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.27\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.27\Modules\GNUInstallDirs.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\cmake_uninstall.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\glfw3Config.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master -BE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build --check-stamp-file E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\mingw64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.27\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.27\Modules\GNUInstallDirs.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\cmake_uninstall.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\glfw3Config.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master -BE:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build --check-stamp-file E:/Programming_Work/Projects/opengl_rubiks_cube/glfw-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\mingw64\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\mingw64\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.27\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.27\Modules\GNUInstallDirs.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\cmake_uninstall.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\glfw3Config.cmake.in;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\3.27.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\ZERO_CHECK.vcxproj">
+      <Project>{7CE88641-ADE9-35D3-B382-83CDCC145169}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\allocator.vcxproj">
+      <Project>{2507320B-63DA-3C72-B66F-5F9919AA064B}</Project>
+      <Name>allocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\boing.vcxproj">
+      <Project>{9A9B2739-8B2D-3312-8B13-281812D5B831}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\clipboard.vcxproj">
+      <Project>{36AE76A6-E393-3251-8F2A-979B791AE755}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\cursor.vcxproj">
+      <Project>{2E94E808-736D-340F-BF97-74F08C43BB77}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\empty.vcxproj">
+      <Project>{AB791877-749D-37C6-9824-0D7D4D2EB508}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\events.vcxproj">
+      <Project>{CF780941-C622-307E-8F5D-E642143EB083}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\gamma.vcxproj">
+      <Project>{EA108859-051B-3FBB-84EA-E1A50DBE755E}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\gears.vcxproj">
+      <Project>{91154293-98FB-3BEC-B872-305108D99E81}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\src\glfw.vcxproj">
+      <Project>{B0129F56-0499-34FE-A7A9-2F8CACBC5ED6}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\glfwinfo.vcxproj">
+      <Project>{A1B88330-03A1-3542-B417-5E8CA051B845}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\heightmap.vcxproj">
+      <Project>{E20FF08E-C50C-3639-B3B8-36E45F52BD78}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\icon.vcxproj">
+      <Project>{4986153A-FDDC-3E76-98BA-12F840D6DEE4}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\iconify.vcxproj">
+      <Project>{EFDCBFEC-5086-3613-A0AA-505931C01D04}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\inputlag.vcxproj">
+      <Project>{0DEA1F85-A952-37EA-A42E-C988746F179A}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\joysticks.vcxproj">
+      <Project>{EC657972-8EAE-325A-9FC7-8C009E8CE7B8}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\monitors.vcxproj">
+      <Project>{52628741-7D8D-3955-B04C-0E29BEB7B007}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\msaa.vcxproj">
+      <Project>{5DB12D93-3F9C-3ACD-AB11-00425F8AC12B}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\offscreen.vcxproj">
+      <Project>{C3CFC040-8F41-3DA3-992E-B98D0AD849A9}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\particles.vcxproj">
+      <Project>{C6198FBA-5A42-3B60-8C59-4FDCFD0EDB6F}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\reopen.vcxproj">
+      <Project>{B79348A2-1709-34B0-8EA4-DED490617447}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\sharing.vcxproj">
+      <Project>{BC4D99D8-34E4-32F3-9024-09F310A373EB}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\splitview.vcxproj">
+      <Project>{3536CE76-A842-3DE6-949F-BE982C1CB3FB}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\tearing.vcxproj">
+      <Project>{6C136173-EB96-31B4-80DC-7AADBD34D7D0}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\threads.vcxproj">
+      <Project>{5F9409A8-BC8B-3684-9940-5ABA18B285B9}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\timeout.vcxproj">
+      <Project>{AD76CC85-7DEE-3312-9CE4-61BACEB63F4D}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\title.vcxproj">
+      <Project>{04D9888F-25C1-39CD-AE78-AC0D9C4D6154}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\triangle-opengl.vcxproj">
+      <Project>{CAACA110-B337-3E7E-B571-F00A6650EC98}</Project>
+      <Name>triangle-opengl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\triangle-opengles.vcxproj">
+      <Project>{7D080198-F9AD-3C9A-A34E-EEE611F7A941}</Project>
+      <Name>triangle-opengles</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\triangle-vulkan.vcxproj">
+      <Project>{1DD9B9C8-B4A0-3B58-B2C6-189536C4280C}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\wave.vcxproj">
+      <Project>{89888F70-FE44-3EF9-917D-14024BB117CA}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\tests\window.vcxproj">
+      <Project>{79DD3F57-D448-3C5D-B8C7-25B530597474}</Project>
+      <Name>window</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\examples\windows.vcxproj">
+      <Project>{70E946D1-DC7B-32B0-A3F4-2E1992293A7D}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

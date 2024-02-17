@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\examples\triangle-opengles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\deps\glad\gles2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\examples\glfw.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B5C06DE1-37AB-373A-9290-CD75F95CBC72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{80E2A9E0-5128-39EA-916A-887E10E745FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

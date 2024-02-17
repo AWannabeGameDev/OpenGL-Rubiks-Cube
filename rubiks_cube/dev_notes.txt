@@ -1,0 +1,41 @@
+RUBIKS CUBE SIMULATION 
+
+Defor -> Default orientation
+
+0. States
+	- Selected layer (User changeable) : position-index of center-voxel (see layer semantics)
+	- Layer snapped : bool
+	
+1. Voxel
+	- Color for each vertex-index : set in solved defor space
+	- Transform in defor space
+	- Store voxels in a constant array (vox-array)
+	
+2. Layer semantics 
+	- Position index that is constant in defor-space
+	- A layer is simply a fixed set of position indices
+	- Map position-indices to voxel-indices in vox-array
+	- A layer can be specified solely by position-index of center-voxel
+
+3. Cube-movement semantics
+	- Rotating : select position-indices of selected layer and change transform of all corresponding voxels within defor-space itself. Set snapped to false
+	- Snapping : select position-indices of selected layer and change corresponding vox-array-index to snap. Set snapped to true
+	- Rotating whole cube : have a global rotation transform, applied to all voxel transforms (which are in defor space) before rendering
+	
+4. User utility
+	- Can take a ray and tell which position-index it intersects with (or if it doesn't)
+		- Iterate through all position-indices, transform corresponding voxel-transforms (which are in defor-space) to world-space and test ray-intersection
+	- Can take a position-index and return a list of layers (position-index of center-voxel) it is contained in, and corresponding axes (see user logic)
+	- Can take position-index of center-voxel and apply given rotation
+	
+5. User logic
+	- Transform mouse-movement from view-space to defor-space
+	- If snapped : 
+		- Cast mouse-movement along the axes retrieved, and store position-index of center-voxel with maximum projection along corresponding axis
+		- Set selected layer to above retrieved position-index of center-voxel
+		- Store corresponding axis
+		- Rotate
+	- If unsnapped :
+		- Cast mouse-movement along stored axis
+		- Rotate
+	- If mouse released, snap layer

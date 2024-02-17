@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\bec955e5375cd22980b7b73f3be20f7c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{473785D9-4A34-36D8-85D4-D3388F04E68C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\CMakeFiles\67a28d994c51a96b57160c2d4add0d4f\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\CMake\GenerateMappings.cmake" />
+    <None Include="E:\Programming_Work\Projects\opengl_rubiks_cube\glfw-master\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{473785D9-4A34-36D8-85D4-D3388F04E68C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B5C06DE1-37AB-373A-9290-CD75F95CBC72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
